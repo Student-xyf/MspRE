@@ -1,0 +1,1 @@
+https://huggingface.co/allenai/scibert_scivocab_cased/tree/main

@@ -5,10 +5,10 @@ from models.simam import SimAM_Module
 import json
 
 
-class RIFRE_TR(nn.Module):
+class MSPRE_TR(nn.Module):
 
     def __init__(self, encoder, config):
-        super(RIFRE_TR, self).__init__()
+        super(MSPRE_TR, self).__init__()
         self.config = config
         self.sentence_encoder = encoder
         self.gat = HGAT(config)

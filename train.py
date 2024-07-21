@@ -1,6 +1,6 @@
 from encoder.bert_encoder import BERTEncoder
-from models.rifre_sentence import RIFRE_SEN
-from models.rifre_triple import RIFRE_TR
+from models.mspre_sentence import MspRE_SEN
+from models.mspre_triple import MSPRE_TR
 from framework.sentence_re import Sentence_RE
 from framework.triple_re import Triple_RE
 from framework.triple_re_Chinese import Triple_RE_CHINESE
@@ -34,7 +34,7 @@ if __name__ == '__main__':
         print('train--' + dataset + config.CMeIE_ckpt)
         config.class_nums = config.CMeIE_class
         sentence_encoder = BERTEncoder(pretrain_path=config.bert_base_chinese)
-        model = RIFRE_TR(sentence_encoder, config)
+        model = MSPRE_TR(sentence_encoder, config)
         count_params(model)
         framework = Triple_RE_CHINESE(model,
                               train=config.CMeIE_train,
@@ -57,7 +57,7 @@ if __name__ == '__main__':
         config.class_nums = config.BB_class
         sentence_encoder = BERTEncoder(pretrain_path=config.scibert_scivocab_cased)
 
-        model = RIFRE_TR(sentence_encoder, config)
+        model = MSPRE_TR(sentence_encoder, config)
         count_params(model)
         framework = Triple_RE(model,
                               train=config.BB_train,
@@ -80,7 +80,7 @@ if __name__ == '__main__':
         config.class_nums = config.Chemport_class
         sentence_encoder = BERTEncoder(pretrain_path=config.bert_base_cased)
 
-        model = RIFRE_TR(sentence_encoder, config)
+        model = MSPRE_TR(sentence_encoder, config)
         count_params(model)
         framework = Triple_RE(model,
                               train=config.Chemport_train,
@@ -103,7 +103,7 @@ if __name__ == '__main__':
         config.class_nums = config.SciERC_class
         sentence_encoder = BERTEncoder(pretrain_path=config.scibert_scivocab_cased)
 
-        model = RIFRE_TR(sentence_encoder, config)
+        model = MSPRE_TR(sentence_encoder, config)
         count_params(model)
         framework = Triple_RE(model,
                               train=config.SciERC_train,

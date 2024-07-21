@@ -4,10 +4,10 @@ import torch.nn.functional as F
 import math
 
 
-class RIFRE_SEN(nn.Module):
+class MspRE_SEN(nn.Module):
 
     def __init__(self, encoder, config):
-        super(RIFRE_SEN, self).__init__()
+        super(MspRE_SEN, self).__init__()
         self.config = config
         self.sentence_encoder = encoder
         self.gat = HGAT(config)

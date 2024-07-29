@@ -1,6 +1,6 @@
 **MspRE**
 
-This repository contains the code to reproduce for the paper: Joint Entity Relation Extraction Based on Multi-Scale Feature Fusion and Non-parametric Attention Mechanism.
+This repository contains the code to reproduce for the paper: Joint extraction of entities and relations through multi-scale feature fusion and parameter-free attention mechanism（基于多尺度特征融合和无参注意力机制的实体关系联合抽取方法研究）.
 
 **Installing**
 

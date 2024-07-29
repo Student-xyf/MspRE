@@ -20,7 +20,9 @@ You should probably do this in a Python 3 virtual environment.
 
 We used BB, ChemPort, SciERC, and CMeIE datasets. These public datasets can be found on the corresponding websites.
 
-For example：https://sites.google.com/view/bb-2019/dataset
+For example：https://sites.google.com/view/bb-2019/dataset,
+https://biocreative.bioinformatics.udel.edu/news/corpora/chemprot-corpus-biocreative-vi/,
+
 
 **Pre-trained language model**
 

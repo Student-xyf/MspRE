@@ -24,6 +24,8 @@ For example：https://sites.google.com/view/bb-2019/dataset,
 
 https://biocreative.bioinformatics.udel.edu/news/corpora/chemprot-corpus-biocreative-vi/,
 
+http://nlp.cs.washington.edu/sciIE/,
+
 
 **Pre-trained language model**
 
